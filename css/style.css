@@ -110,6 +110,7 @@ nav a:active {
     left: 1%;
     color: white;
     width: 35%;
+    font-size: 2.7vw;
 }
 
 .mid-left-futebol {
@@ -120,6 +121,7 @@ nav a:active {
     color: yellow;
     text-shadow: 2px 2px 5px black;
     width: 45%;
+    font-size: 2.5vw;
 }
 
 .top-left-super-banner {
@@ -127,7 +129,8 @@ nav a:active {
     position: absolute;
     top: 2%;
     left: 20%;
-    color: red
+    color: red;
+    font-size: 1.8vw;
 }
 
 .mid-left-super-banner {
@@ -137,6 +140,7 @@ nav a:active {
     left: 5%;
     color: white;
     width: 50%;
+    font-size: 1.5vw;
 }
 
 /* Botão QUERO-TESTAR */
@@ -237,9 +241,15 @@ footer {
         padding: 2px;
         display: block;
     }
-
     .quero-testar a {
         font-size: 10px;
+    }
+    .mid-left-futebol, .mid-left-samurai, .top-left, .top-left-super-banner {
+        font-size: 3.2vw;
+    }
+
+    .mid-left-super-banner {
+        font-size: 2.5vw;
     }
     .velocimetro {
         display: flex;
