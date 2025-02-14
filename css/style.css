@@ -1,0 +1,254 @@
+* {
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, white, rgb(1, 92, 153) 80%) fixed no-repeat;
+}
+
+.banner {
+    max-width: 720px;
+}
+
+img {
+    width: 100%;
+}
+
+/* NAVBAR */
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+    background: linear-gradient(0deg, yellow, orange 80%) no-repeat;
+}
+
+.navbar {
+    display: flex;
+    max-width: 800px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    background: linear-gradient(180deg, #5c5c5c 0%, #333333 49%, #333333 51%, #5c5c5c 100%);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: rgba(255, 136, 0, 0.918);
+}
+
+nav a:active {
+    box-shadow: none;
+    background: #222;
+}
+
+/* CONTAINER */
+.container {
+    margin-bottom: 20px;
+}
+
+.container #image-hover {
+    /* junta as duas imagens */
+    cursor: pointer;
+    /* largura imagem padrão */
+    display: block;
+}
+
+/* CARDS */
+.card {
+    position: relative;
+    max-width: 998px;
+}
+
+/* Float Text*/
+.mid-left {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.center-bottom {
+    position: absolute;
+    top: 88%;
+    left: 33%;
+}
+
+.right-bottom {
+    position: absolute;
+    top: 78%;
+    right: 8%;
+}
+
+.left-bottom {
+    position: absolute;
+    top: 84%;
+    left: 12%;
+}
+
+.top-left {
+    font-family: 'Georgia';
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    color: yellow;
+}
+
+.mid-left-samurai {
+    font-family: 'Georgia';
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    color: white;
+    width: 35%;
+}
+
+.mid-left-futebol {
+    font-family: 'Georgia';
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+    width: 45%;
+}
+
+.top-left-super-banner {
+    font-family: 'Georgia';
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    color: red
+}
+
+.mid-left-super-banner {
+    font-family: 'Georgia';
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    color: white;
+    width: 50%;
+}
+
+/* Botão QUERO-TESTAR */
+.quero-testar a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    background: linear-gradient(180deg, lightblue 0%, rgb(106, 106, 223) 49%, rgb(106, 106, 223) 51%, lightblue 100%);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.quero-testar a:hover {
+    color: yellow;
+    background: linear-gradient(180deg, lightblue 0%, rgb(168, 168, 238) 49%, rgb(168, 168, 238) 51%, lightblue 100%);
+}
+
+.quero-testar a:active {
+    box-shadow: none;
+    background: rgb(106, 106, 223);
+}
+
+iframe {
+    width: 100%;
+    min-height: 320px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-prices {
+    display: flex;
+}
+.columns {
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+/* Media Query */
+@media screen and (max-width: 1300px) {
+
+    .mid-left-samurai,
+    .mid-left-futebol {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 820px) {
+    .navbar,
+    a {
+        display: block;
+        margin: 0px;
+    }
+    li {
+        padding: 2px;
+        display: block;
+    }
+    .velocimetro {
+        display: flex;
+        justify-content: center;
+    }
+    .velocimetro > a {
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-prices {
+        display: block;
+        width: 100%;
+    }
+    .columns {
+        width: 100%;
+    }
+}
