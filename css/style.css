@@ -148,6 +148,7 @@ nav a:active {
     color: white;
     background: linear-gradient(180deg, lightblue 0%, rgb(106, 106, 223) 49%, rgb(106, 106, 223) 51%, lightblue 100%);
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.8vw;
 }
 
 .quero-testar a:hover {
@@ -235,6 +236,10 @@ footer {
     li {
         padding: 2px;
         display: block;
+    }
+
+    .quero-testar a {
+        font-size: 10px;
     }
     .velocimetro {
         display: flex;
